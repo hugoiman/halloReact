@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 
-class Header extends Component{
+// Penulisan alternatif
+// import React from 'react'; maka class harus ditulis
+// class Header extends Component{
+
+class Header extends React.Component{
   render(){
     return(
       <div>
