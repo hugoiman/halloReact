@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-
-class Header extends Component{
-  render(){
-    return(
-      <div>
-        <h2>Ini header</h2>
-      </div>
-    )
-  }
-}
+import Header from './Header';
 
 class App extends Component {
   render() {
