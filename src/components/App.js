@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header list="3 Terbaik-" />
         <List />
         <Footer nama="Masakan Nusantara" tahun="2018" />
       </div>

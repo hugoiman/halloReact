@@ -10,7 +10,8 @@ class Header extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      /*nama state = daftar*/ daftar:"Daftar Makanan Nusantara"
+      /*nama state = daftar*/ daftar : "Daftar Makanan Nusantara",
+      dataList : this.props.list
     };
   }
 
@@ -19,6 +20,7 @@ class Header extends Component{
       <div>
         <h2>Makanan Khas Indonesia</h2>
         <p>{this.state.daftar}</p>
+        <p>{this.state.dataList}</p>
       </div>
     )
   }
