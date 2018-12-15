@@ -5,10 +5,20 @@ import React, {Component} from 'react';
 // class Header extends React.Component{
 
 class Header extends Component{
+
+  // Menulis State yg berada di dalam construsctor
+  constructor(props) {
+    super(props);
+    this.state = {
+      /*nama state = daftar*/ daftar:"Daftar Makanan Nusantara"
+    };
+  }
+
   render(){
     return(
       <div>
-        <h2>Ini header</h2>
+        <h2>Makanan Khas Indonesia</h2>
+        <p>{this.state.daftar}</p>
       </div>
     )
   }
