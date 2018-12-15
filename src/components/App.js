@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <Header />
         <List />
-        <Footer />
+        <Footer nama="Masakan Nusantara" tahun="2018" />
       </div>
     );
   }
