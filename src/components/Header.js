@@ -17,8 +17,9 @@ class Header extends Component{
     this.handlePesan = this.handlePesan.bind(this);
   }
 
-  handlePesan(){
+  handlePesan(value){
     alert(this.state.daftar);
+    alert(value);
   }
 
   render(){
@@ -27,9 +28,9 @@ class Header extends Component{
         <h2>Makanan Khas Indonesia</h2>
         <p>{this.state.daftar}</p>
         <p>{this.state.dataList}</p>
-        <a href="/" onClick={this.handlePesan}>
+        <a href="/" onClick={() => this.handlePesan("Pesan dari Header")}>
           Halaman Header
-          </a>
+        </a>
       </div>
     )
   }
