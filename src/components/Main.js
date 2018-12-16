@@ -9,6 +9,7 @@ class Main extends Component {
       title2: "Menu Minuman"
     };
     this.rubahData = this.rubahData.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   // Function untuk mengubah state: 2 cara
@@ -26,6 +27,10 @@ class Main extends Component {
     });
   }
 
+  handleChange() {
+    console.log("Jalan");
+  }
+
   render() {
     return (
       <div>
@@ -34,6 +39,8 @@ class Main extends Component {
         <button onClick={this.rubahData}>
           Rubah data
         </button>
+        <br/><br/>
+        <input type="text" onChange={this.handleChange} />
       </div>
     );
   }
