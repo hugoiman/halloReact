@@ -11,8 +11,14 @@ class Main extends Component {
   }
 
   // Function untuk mengubah state
+  // rubahData(){
+  //   this.setState({title: "Pilih Makanan"});
+  // }
+
   rubahData(){
-    this.setState({title: "Pilih Makanan"});
+    this.setState((state, props) => {
+      return { title : "Pilih Menu Makanan" };
+    });
   }
 
   render() {
